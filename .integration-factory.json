@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "5faf312da3708cc59063b4fdd85a116d328ca90a57c177442cb646377791cfad",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://helpcentre.3scri.be/developers/api/"
+  ],
+  "id": "3scribe-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "3Scribe MCP setup and connection checker",
+  "description": "Generate 3Scribe MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "3scribe",
+  "appName": "3Scribe",
+  "providerDocs": "https://helpcentre.3scri.be/developers/api/",
+  "providerWebsite": "https://3scri.be/",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://helpcentre.3scri.be/developers/api/",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-3scribe-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
