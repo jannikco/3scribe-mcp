@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-3scribe",
+      "description": "Connect AI agents to 3Scribe using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-3scribe/SKILL.md": "a4b6ebcb2a92f04da04407d881ca4a8aa6268f9f4c8224d228bde5010c06b29a"
+  }
+}

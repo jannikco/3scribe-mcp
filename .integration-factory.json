@@ -1,39 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "5faf312da3708cc59063b4fdd85a116d328ca90a57c177442cb646377791cfad",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://helpcentre.3scri.be/developers/api/"
-  ],
   "id": "3scribe-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "3Scribe MCP setup and connection checker",
-  "description": "Generate 3Scribe MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare 3Scribe for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-3scribe-mcp",
+  "sourceRevision": "72444c17b433ea333c26fa9654aa5d23a68190aeef14bf3f176585b93cd15472",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://helpcentre.3scri.be/developers/api/"
+  ],
+  "utility": {
+    "problem": "Prepare 3Scribe and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "3scribe",
   "appName": "3Scribe",
-  "providerDocs": "https://helpcentre.3scri.be/developers/api/",
-  "providerWebsite": "https://3scri.be/",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://helpcentre.3scri.be/developers/api/",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-3scribe-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }
